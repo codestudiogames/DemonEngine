@@ -1,0 +1,37 @@
+DemonEngine MSVC Build Tools
+=============================
+
+Main builder:
+    python build_engine.py
+
+Debug:
+    python build_engine.py --debug
+
+Release:
+    python build_engine.py --release
+
+Clean and rebuild:
+    python build_engine.py --clean
+
+Configure only:
+    python build_engine.py --configure-only
+
+MSVC diagnostic:
+    python check_msvc.py
+
+Default source directory:
+    D:\DemonEngine_SDK_v1.2\DemonEngine
+
+The builder:
+    1. Checks the engine directory.
+    2. Finds Visual Studio using vswhere.exe.
+    3. Requires x64 C++ / MSVC tools.
+    4. Initializes VsDevCmd.bat for x64.
+    5. Verifies cl.exe, CMake and Ninja.
+    6. Configures with Ninja Multi-Config + MSVC.
+    7. Builds Debug or Release.
+
+The dedicated build folder is:
+    build-msvc
+
+This avoids reusing an old MinGW/preset cache.
