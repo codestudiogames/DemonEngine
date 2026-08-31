@@ -1,0 +1,13 @@
+@PACKAGE_INIT@
+# ==============================================================================
+#  DemonEngineConfig.cmake  —  CMake package configuration
+#  Allows downstream projects to use:  find_package(DemonEngine REQUIRED)
+# ==============================================================================
+
+include(CMakeFindDependencyMacro)
+
+# DirectX 12 uses the Windows 10 SDK; no CMake find module required.
+
+include("${CMAKE_CURRENT_LIST_DIR}/DemonEngineTargets.cmake")
+
+check_required_components(DemonEngine)
