@@ -1,0 +1,62 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": { "major": 3, "minor": 25, "patch": 0 },
+
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Ninja Multi-Config",
+      "binaryDir": "${sourceDir}/cmake-build-ninja",
+      "cacheVariables": {
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
+        "CMAKE_C_COMPILER"   : "E:/Qt/Tools/mingw1310_64/bin/gcc.exe",
+        "CMAKE_CXX_COMPILER" : "E:/Qt/Tools/mingw1310_64/bin/g++.exe",
+        "CMAKE_RC_COMPILER"  : "E:/Qt/Tools/mingw1310_64/bin/windres.exe",
+
+        "GLM_DIR"      : "C:/glm-master/glm",
+        "SDL3_DIR"     : "E:/SDL3-3.4.2/SDL3-3.4.2",
+        "JOLTPHYSICS_DIR" : "C:/JoltPhysics/Jolt",
+        "DX12_SDK_DIR" : "C:/Program Files (x86)/Windows Kits/10",
+        "DX_HEADERS_DIR" : "C:/DirectX-Headers",
+
+        "DEMON_BUILD_EDITOR"    : "ON",
+        "DEMON_BUILD_TOOLS"     : "ON",
+        "DEMON_BUILD_TEMPLATES" : "ON"
+      }
+    },
+
+    {
+      "name": "debug",
+      "displayName": "Debug",
+      "inherits": "base",
+      "cacheVariables": {
+        "DEMON_ENABLE_DX12_DEBUG" : "ON"
+      }
+    },
+
+    {
+      "name": "release",
+      "displayName": "Release",
+      "inherits": "base",
+      "cacheVariables": {
+        "DEMON_ENABLE_DX12_DEBUG" : "OFF"
+      }
+    },
+
+    {
+      "name": "relwithdebinfo",
+      "displayName": "RelWithDebInfo",
+      "inherits": "base",
+      "cacheVariables": {
+        "DEMON_ENABLE_DX12_DEBUG" : "ON"
+      }
+    }
+  ],
+
+  "buildPresets": [
+    { "name": "debug",          "configurePreset": "debug",          "configuration": "Debug" },
+    { "name": "release",        "configurePreset": "release",        "configuration": "Release" },
+    { "name": "relwithdebinfo", "configurePreset": "relwithdebinfo", "configuration": "RelWithDebInfo" }
+  ]
+}

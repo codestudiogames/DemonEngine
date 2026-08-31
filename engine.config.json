@@ -1,0 +1,27 @@
+{
+  "window": {
+    "title": "DemonEngine App",
+    "width": 1280,
+    "height": 720,
+    "fullscreen": false,
+    "vsync": true,
+    "resizable": true
+  },
+  "runtime": {
+    "hot_reload": true
+  },
+  "logging": {
+    "level": "Info"
+  },
+  "threading": {
+    "worker_count": 0,
+    "stall_warning_ms": 5000,
+    "affinity_mask": "0x0"
+  },
+  "platform": {
+    "windows": {
+      "enable_dpi_awareness": true,
+      "resizable": true
+    }
+  }
+}

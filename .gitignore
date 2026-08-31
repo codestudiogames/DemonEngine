@@ -1,0 +1,37 @@
+# ── Build output (CLion creates build/ per preset) ────────────────────────────
+build/
+cmake-build-*/
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.pdb
+*.ninja
+*.ninja_deps
+*.ninja_log
+.ninja_deps
+.ninja_log
+
+# ── SPIR-V compiled shaders ───────────────────────────────────────────────────
+assets/shaders/spirv/*.spv
+
+# ── CLion ─────────────────────────────────────────────────────────────────────
+.idea/*
+!.idea/cmake.xml
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/shelf/
+
+# ── ImGui layout (user-specific) ──────────────────────────────────────────────
+demon_layout.ini
+imgui.ini
+
+# ── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log

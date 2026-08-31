@@ -1,0 +1,214 @@
+Microsoft (R) COFF/PE Dumper Version 14.44.35225.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+
+Dump of file E:\DemonEngine_SDK_v1.2\DemonEngine\cmake-build-ninja\bin\Debug\DemonEngine.exe
+
+PE signature found
+
+File Type: EXECUTABLE IMAGE
+
+FILE HEADER VALUES
+            8664 machine (x64)
+               9 number of sections
+        69C76B23 time date stamp Sat Mar 28 11:16:11 2026
+               0 file pointer to symbol table
+               0 number of symbols
+              F0 size of optional header
+              22 characteristics
+                   Executable
+                   Application can handle large (>2GB) addresses
+
+OPTIONAL HEADER VALUES
+             20B magic # (PE32+)
+           14.44 linker version
+          36F200 size of code
+          177400 size of initialized data
+               0 size of uninitialized data
+            8E04 entry point (0000000140008E04) @ILT+32255(mainCRTStartup)
+            1000 base of code
+       140000000 image base (0000000140000000 to 00000001404ECFFF)
+            1000 section alignment
+             200 file alignment
+            6.00 operating system version
+            0.00 image version
+            6.00 subsystem version
+               0 Win32 version
+          4ED000 size of image
+             400 size of headers
+               0 checksum
+               3 subsystem (Windows CUI)
+            8160 DLL characteristics
+                   High Entropy Virtual Addresses
+                   Dynamic base
+                   NX compatible
+                   Terminal Server Aware
+          100000 size of stack reserve
+            1000 size of stack commit
+          100000 size of heap reserve
+            1000 size of heap commit
+               0 loader flags
+              10 number of directories
+               0 [       0] RVA [size] of Export Directory
+          4DD5E0 [     154] RVA [size] of Import Directory
+          4E5000 [     459] RVA [size] of Resource Directory
+          4B0000 [   280B0] RVA [size] of Exception Directory
+               0 [       0] RVA [size] of Certificates Directory
+          4E6000 [    2D6C] RVA [size] of Base Relocation Directory
+          471440 [      38] RVA [size] of Debug Directory
+               0 [       0] RVA [size] of Architecture Directory
+               0 [       0] RVA [size] of Global Pointer Directory
+          4729A0 [      28] RVA [size] of Thread Storage Directory
+          4712C0 [     140] RVA [size] of Load Configuration Directory
+               0 [       0] RVA [size] of Bound Import Directory
+          4DC000 [    15E0] RVA [size] of Import Address Table Directory
+               0 [       0] RVA [size] of Delay Import Directory
+               0 [       0] RVA [size] of COM Descriptor Directory
+               0 [       0] RVA [size] of Reserved Directory
+
+
+SECTION HEADER #1
+   .text name
+  36F170 virtual size
+    1000 virtual address (0000000140001000 to 000000014037016F)
+  36F200 size of raw data
+     400 file pointer to raw data (00000400 to 0036F5FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+60000020 flags
+         Code
+         Execute Read
+
+SECTION HEADER #2
+  .rdata name
+  131639 virtual size
+  371000 virtual address (0000000140371000 to 00000001404A2638)
+  131800 size of raw data
+  36F600 file pointer to raw data (0036F600 to 004A0DFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+  Debug Directories
+
+        Time Type        Size      RVA  Pointer
+    -------- ------- -------- -------- --------
+    69C4B66E cv            68 0047575C   473D5C    Format: RSDS, {71DF8BF8-91B8-4C27-96E3-B53F1439BE88}, 26, E:\DemonEngine_SDK_v1.2\DemonEngine\cmake-build-ninja\bin\Debug\DemonEngine.pdb
+    69C4B66E feat          14 004757C4   473DC4    Counts: Pre-VC++ 11.00=0, C/C++=104, /GS=104, /sdl=0, guardN=59
+
+SECTION HEADER #3
+   .data name
+    C731 virtual size
+  4A3000 virtual address (00000001404A3000 to 00000001404AF730)
+    3000 size of raw data
+  4A0E00 file pointer to raw data (004A0E00 to 004A3DFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+SECTION HEADER #4
+  .pdata name
+   2BE6C virtual size
+  4B0000 virtual address (00000001404B0000 to 00000001404DBE6B)
+   2C000 size of raw data
+  4A3E00 file pointer to raw data (004A3E00 to 004CFDFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #5
+  .idata name
+    6301 virtual size
+  4DC000 virtual address (00000001404DC000 to 00000001404E2300)
+    6400 size of raw data
+  4CFE00 file pointer to raw data (004CFE00 to 004D61FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #6
+    .tls name
+     309 virtual size
+  4E3000 virtual address (00000001404E3000 to 00000001404E3308)
+     400 size of raw data
+  4D6200 file pointer to raw data (004D6200 to 004D65FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+C0000040 flags
+         Initialized Data
+         Read Write
+
+SECTION HEADER #7
+  .00cfg name
+     175 virtual size
+  4E4000 virtual address (00000001404E4000 to 00000001404E4174)
+     200 size of raw data
+  4D6600 file pointer to raw data (004D6600 to 004D67FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #8
+   .rsrc name
+     459 virtual size
+  4E5000 virtual address (00000001404E5000 to 00000001404E5458)
+     600 size of raw data
+  4D6800 file pointer to raw data (004D6800 to 004D6DFF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+40000040 flags
+         Initialized Data
+         Read Only
+
+SECTION HEADER #9
+  .reloc name
+    6356 virtual size
+  4E6000 virtual address (00000001404E6000 to 00000001404EC355)
+    6400 size of raw data
+  4D6E00 file pointer to raw data (004D6E00 to 004DD1FF)
+       0 file pointer to relocation table
+       0 file pointer to line numbers
+       0 number of relocations
+       0 number of line numbers
+42000040 flags
+         Initialized Data
+         Discardable
+         Read Only
+
+  Summary
+
+        1000 .00cfg
+        D000 .data
+        7000 .idata
+       2C000 .pdata
+      132000 .rdata
+        7000 .reloc
+        1000 .rsrc
+      370000 .text
+        1000 .tls
